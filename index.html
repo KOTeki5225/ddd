@@ -58,7 +58,7 @@
 
 <script>
     // ВСТАВЬ СВОЙ КЛЮЧ МЕЖДУ КАВЫЧЕК
-    const API_KEY = 'AIzaSyBpBsMq6DHbKVG0qanqq7hl3zwHbSovLBc'; 
+    const API_KEY = 'AIzaSyDtJVB0yz8acHvswgbgO8Kyu78J7jLmTKE'; 
 
     async function runAI() {
         const form = document.getElementById('quizForm');
@@ -86,7 +86,7 @@
 
         try {
             // Исправленный URL
-            const url = "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash-latest:generateContent?key=" + API_KEY;
+            const url = "https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash:generateContent?key=" + API_KEY;
             
             const response = await fetch(url, {
                 method: "POST",
@@ -119,5 +119,6 @@
 
 </body>
 </html>
+
 
 
